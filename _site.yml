@@ -1,0 +1,6 @@
+name: "Terror"
+navbar:
+  title: "Terror in France"
+  left:
+    - text: "Home"
+      href: index.html
