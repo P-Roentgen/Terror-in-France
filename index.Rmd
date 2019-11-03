@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Analysis of terroristic activities in Europe with a special focus on France
 
 This page will provide plotted analysis of different datasets regarding number of terrorist activities and repective numbers of casulties assosiated with these events.
-in these first colum there will be the general European and possibly worldwide numbers.
+in these first colum there will be the general European and worldwide numbers.
 
 ```{r}
 data <- readr::read_csv(file = "data/country_stats_1993_appendix2.csv")
