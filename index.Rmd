@@ -7,16 +7,12 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Analysis of terroristic activities in Europe with a special focus on France
 
 This page will provide plotted analysis of different datasets regarding number of terrorist activities and repective numbers of casulties assosiated with these events.
 in these first colum there will be the general European and worldwide numbers.
 
-```{r}
+```{r, echo = FALSE}
 data <- readr::read_csv(file = "data/country_stats_1993_appendix2.csv")
 
 library(ggplot2)
@@ -35,8 +31,16 @@ g
 
 This pragraph will show a more detailed view on the data regading France.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+```{r , echo = FALSE}
+data <- readr::read_csv(file = "data/france_terrorism_fatalities_by_year.csv")
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+library(ggplot2)
+g <- ggplot(
+ data = data,
+ mapping = aes(x = year, y = fatalities)
+)
+
+g <- g + geom_point()
+g <- g + geom_smooth()
+g
+```
