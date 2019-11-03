@@ -26,8 +26,8 @@ g <- ggplot(
 )
 
 g <- g + geom_col()
+g <- g + theme(axis.text.x = element_text(angle = 90))
 g
-
 ```
 
 
