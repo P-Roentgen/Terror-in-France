@@ -9,19 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Analysis of terroristic activities in Europe with a special focus on France
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+This page will provide plotted analysis of different datasets regarding number of terrorist activities and repective numbers of casulties assosiated with these events.
+in these first colum there will be the general European and possibly worldwide numbers.
 
 ```{r cars}
 summary(cars)
 ```
 
-## Including Plots
+## Focus on France
 
-You can also embed plots, for example:
+This pragraph will show a more detailed view on the data regading France.
 
 ```{r pressure, echo=FALSE}
 plot(pressure)
