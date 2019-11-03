@@ -12,3 +12,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Language: en
 LazyData: true
+Imports: 
+    rmarkdown,
+    ggplot2,
+    readr
